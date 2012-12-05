@@ -54,7 +54,8 @@ Dependencias generales:
 Herramienta pip para la instalación de paquetes Python
 ------------------------------------------------------
 
-Instalamos el meta-paquete que contiene la herramienta easy_install que utilizaremos para obtener la versión más actualizada de pip:
+Instalamos el meta-paquete que contiene la herramienta easy_install que
+utilizaremos para obtener la versión más actualizada de pip:
 
 .. code-block:: bash
 
@@ -98,7 +99,8 @@ Instalación de la herramienta en la carpeta del usuario:
 
     $ pip install --user virtualenv
 
-Agregamos al PATH la carpeta donde pip instala los paquetes Python del usuario ($HOME/.local/bin):
+Agregamos al PATH la carpeta donde pip instala los paquetes Python del usuario
+($HOME/.local/bin):
 
 .. code-block:: bash
 
@@ -121,7 +123,8 @@ Creamos el entorno:
     Installing setuptools............done.
     Installing pip...............done.
 
-Para activar el entorno, cualquiera de las siguientes líneas de comando será válido:
+Para activar el entorno, cualquiera de las siguientes líneas de comando será
+válido:
 
 .. code-block:: bash
 
@@ -168,13 +171,16 @@ Dependencias a instalar para la posterior compilacioń del paquete Python lxml:
 
     (TRYTON)$ pip install lxml==2.3.6 relatorio python-dateutil pytz polib vobject pywebdav
 
-Para la posterior compilación del paquete psycopg2, debemos proceder a agregar las siguientes librerías relacionadas con el repositorio empleado durante la instalación de PostgreSQL:
+Para la posterior compilación del paquete psycopg2, debemos proceder a agregar
+las siguientes librerías relacionadas con el repositorio empleado durante la
+instalación de PostgreSQL:
 
 .. code-block:: bash
 
     $ sudo apt-get install libpq-dev libpq5
 
-En el caso de haber instalado PostgreSQL desde algún backports, dichas librerías deberán instalarse de la misma forma:
+En el caso de haber instalado PostgreSQL desde algún backports, dichas
+librerías deberán instalarse de la misma forma:
 
 .. code-block:: bash
 
@@ -218,7 +224,9 @@ Vatnumber
 http://pypi.python.org/pypi/vatnumber/
 https://code.google.com/p/vatnumber/
 
-El paquete Python ** vatnumber ** es una herramienta que nos permite validar VAT’s (Value Added Tax) de varios países. En el caso de Argentina, los códigos CUIT/CUIL.
+El paquete Python ** vatnumber ** es una herramienta que nos permite validar
+VAT’s (Value Added Tax) de varios países. En el caso de Argentina, los códigos
+CUIT/CUIL.
 
 Mediante 
 
@@ -312,7 +320,8 @@ Desactivar pythonbrew:
 
     $ pythonbrew off
 
-Si falta algún paquete que necesita Python, se debería desinstalar la versión de Python relacionada:
+Si falta algún paquete que necesita Python, se debería desinstalar la versión
+de Python relacionada:
 
 .. code-block:: bash
 
@@ -376,7 +385,8 @@ Encriptar password creado:
     $ createuser -e -s -P anonymous
     CREATE ROLE anonymous SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
 
-En caso de haber usado “createuser -e -s anonymous” sin el parametro “-P”, usamos:
+En caso de haber usado “createuser -e -s anonymous” sin el parametro “-P”,
+usamos:
 
 .. code-block:: bash
 
@@ -414,9 +424,12 @@ Localización
 
 Agregaremos la traducción es_ES en Tryton.
 
-Desde el cliente Tryton, navegamos al menú ** Administración > Localización > Idiomas ** y seleccionando el idioma de código ** es_ES ** para marcarlo como “Traducible”. Y guardamos desde la barra de herramientas (o pulsando CTRL + s):
+Desde el cliente Tryton, navegamos al menú ** Administración > Localización > 
+Idiomas ** y seleccionando el idioma de código ** es_ES ** para marcarlo como 
+“Traducible”. Y guardamos desde la barra de herramientas (o pulsando CTRL + s):
 
-Para que los términos en Español (España) se inserten en la base de datos, es necesario correr el servidor en modo actualización de la siguiente manera:
+Para que los términos en Español (España) se inserten en la base de datos, es
+necesario correr el servidor en modo actualización de la siguiente manera:
 
 .. code-block:: bash
 
@@ -429,7 +442,8 @@ Instalar Tryton Servidor (Capa 2)
 
 Descargamos el paquete desde la pagina oficial
 
-Los siguientes pasos son a modo de recomendación en cuanto a organización de carpetas, archivos...
+Los siguientes pasos son a modo de recomendación en cuanto a organización de
+carpetas, archivos...
 
 .. code-block:: bash
 
