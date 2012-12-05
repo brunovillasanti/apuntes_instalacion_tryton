@@ -17,7 +17,7 @@ Sobre el Entorno Virtual
 
 Notas iniciales sobre métodos de instalación:
 
-:aptitude:		Instalador standard de Linux
+:apt-get:		Instalador standard de Linux
 :easy_install:	Instala paquetes Python última versión
 :pip:			Versión mejorada de easy_install. Brinda la
 posibilidad de desinstalar.
@@ -46,9 +46,9 @@ Dependencias generales:
 
 .. code-block:: bash
 
-   $ sudo aptitude install build-essential python-dev
-   $ sudo aptitude install bzip2-dev libbz2-dev curl
-   $ sudo aptitude install libsqlite3-dev
+   $ sudo apt-get install build-essential python-dev
+   $ sudo apt-get install bzip2-dev libbz2-dev curl
+   $ sudo apt-get install libsqlite3-dev
 
 
 Herramienta pip para la instalación de paquetes Python
@@ -58,7 +58,7 @@ Instalamos el meta-paquete que contiene la herramienta easy_install que utilizar
 
 .. code-block:: bash
 
-   $ sudo aptitude install python-setuptools
+   $ sudo apt-get install python-setuptools
 
 Instalamos pip:
 
@@ -74,13 +74,13 @@ Instalación del motor de base de datos PostgreSQL:
 
 .. code-block:: bash
 
-    $ sudo aptitude install postgresql-9.1
+    $ sudo apt-get install postgresql-9.1
 
 Para controlar PostgreSQL desde una interfaz de cliente:
 
 .. code-block:: bash
 
-    $ sudo aptitude install pgadmin3
+    $ sudo apt-get install pgadmin3
 
 
 Configuración de PostgreSQL
@@ -162,7 +162,7 @@ Dependencias a instalar para la posterior compilacioń del paquete Python lxml:
 
 .. code-block:: bash
 
-    $ sudo aptitude install libxml2-dev libxslt1-dev
+    $ sudo apt-get install libxml2-dev libxslt1-dev
 
 .. code-block:: bash
 
@@ -172,13 +172,13 @@ Para la posterior compilación del paquete psycopg2, debemos proceder a agregar 
 
 .. code-block:: bash
 
-    $ sudo aptitude install libpq-dev libpq5
+    $ sudo apt-get install libpq-dev libpq5
 
 En el caso de haber instalado PostgreSQL desde algún backports, dichas librerías deberán instalarse de la misma forma:
 
 .. code-block:: bash
 
-    $ sudo aptitude install -t squeeze-backports libpq-dev libpq5
+    $ sudo apt-get install -t squeeze-backports libpq-dev libpq5
 
 Instalamos el paquete que nos servirá de conexión a la base de datos:
 
@@ -190,7 +190,7 @@ Dependencias e instalación del paquete python-ldap:
 
 .. code-block:: bash
 
-    $ sudo aptitude install libldap2-dev libsasl2-dev
+    $ sudo apt-get install libldap2-dev libsasl2-dev
     (TRYTON)$ pip install python-ldap
 
 
@@ -199,8 +199,8 @@ Emisión de reportes en otros formatos
 
 .. code-block:: bash
 
-    $ sudo aptitude install python-uno unoconv
-    $ sudo aptitude install openoffice.org
+    $ sudo apt-get install python-uno unoconv
+    $ sudo apt-get install openoffice.org
 
 
 Validación del CUIT de Argentina en Tryton
@@ -211,7 +211,7 @@ Instalación de Mercurial
 
 .. code-block:: bash
 
-    $ sudo aptitude install mercurial
+    $ sudo apt-get install mercurial
 
 Vatnumber
 ---------
@@ -330,8 +330,8 @@ Geany IDE
 
 .. code-block:: bash
 
-    $ sudo aptitude update && sudo aptitude safe-upgrade -f
-    $ sudo aptitude install libgtk2.0-dev intltool
+    $ sudo apt-get update && sudo apt-get upgrade -f
+    $ sudo apt-get install libgtk2.0-dev intltool
 
 Descargar Geany y Plugins de la página oficial y compilarlos:
 
